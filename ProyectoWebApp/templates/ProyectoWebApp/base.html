@@ -21,7 +21,7 @@
 
     <h1 class="site-heading text-center text-white d-none d-lg-block">
 
-        <span class="site-heading-lower">Boticaria Animal</span>
+        <span class="site-heading-lower">MusicPro</span>
     </h1>
 
     <div style="text-align: right; margin-right: 100px; color: white;">
@@ -35,9 +35,9 @@
 
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
-        <img src="{% static 'ProyectoWebApp/img/Logo.jpg'%}" width="100" height="100" alt="" />
+        <img src="{% static 'ProyectoWebApp/img/Icono.png'%}" width="100" height="100" alt="" />
         <div class="container">
-            <a class="navbar-brand text-uppercase text-expanded font-weight-bold d-lg-none" href="{% url 'Home' %}">Boticaria Animal</a>
+            <a class="navbar-brand text-uppercase text-expanded font-weight-bold d-lg-none" href="{% url 'Home' %}">MusicPro</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -50,7 +50,7 @@
                         <a class="nav-link text-uppercase text-expanded" href="{% url 'Servicios' %}">Quienes Somos</a>
                     </li>
                     <li class="nav-item {% if request.path == '/tienda/' %}active{% endif %} px-lg-4">
-                        <a class="nav-link text-uppercase text-expanded" href="{% url 'Tienda' %}">Tienda</a>
+                        <a class="nav-link text-uppercase text-expanded" href="{% url 'Tienda' %}">Productos</a>
                     </li>
                     <li class="nav-item {% if request.path == '/contacto/' %}active{% endif %} px-lg-4">
                         <a class="nav-link text-uppercase text-expanded" href="{% url 'Contacto' %}">Contáctanos</a>
@@ -100,10 +100,10 @@
             </p>
             <p class="m-0 mbt">
                 <a href="sample.html" class="link">Política de privacidad</a> ·
-                <a href="sample.html" class="link">Cesar Gonzalez</a> ·
+                <a href="sample.html" class="link">Javier Contardo-Cesar Gonzalez-Damian Vergara</a> ·
                 <a href="sample.html" class="link">Cookies</a>
             </p>
-            <p class="m-0 mbt1">&copy; Boticaria Animal 2022</p>
+            <p class="m-0 mbt1">&copy; MusicPro2023</p>
         </div>
     </footer>
 
