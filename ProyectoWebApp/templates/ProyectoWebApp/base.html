@@ -41,9 +41,7 @@
                         <a class="nav-link text-uppercase text-expanded" href="{% url 'Contacto' %}">Contáctanos</a>
                     </li>
 
-                    <li class="nav-item {% if request.path|slice:':6' == '/clima/' %}active{% endif %} px-lg-4">
-                        <a class="nav-link text-uppercase text-expanded" href="{% url 'clima' %}">Clima</a>
-                    </li>
+
                     <li class="nav-item {% if request.path|slice:':6' == '/vistapedido/' %}active{% endif %} px-lg-4">
                         <a class="nav-link text-uppercase text-expanded" href="{% url 'listapedido' %}">Compras</a>
                     </li>
