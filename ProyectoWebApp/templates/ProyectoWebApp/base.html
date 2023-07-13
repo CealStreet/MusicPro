@@ -14,24 +14,14 @@
 
 
     <!-- Styles -->
-    <link href="{% static 'ProyectoWebApp/css/gestion copy 2.css' %}" rel="stylesheet">
+    <link href="{% static 'ProyectoWebApp/css/gestion copy 3.css' %}" rel="stylesheet">
 </head>
 
 <body>
-
-    <h1 class="site-heading text-center text-white d-none d-lg-block">
-
-        <span class="site-heading-lower">MusicPro</span>
-    </h1>
-
-    <div style="text-align: right; margin-right: 100px; color: white;">
-
-        {% if user.is_authenticated %} Hola {{ user.username }} &nbsp;&nbsp;<a href="{% url 'cerrar_sesion' %}" style="color: white;">Cerrar sesión</a> {% else %}
-
-        <a href="{% url 'logear'%}" style="color: white;">Login</a> &nbsp; &nbsp; <a href="{% url 'Autenticacion'%}" style="color: white;">Regístrate</a> {% endif %}
+    <br>
 
 
-    </div>
+
 
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
@@ -44,20 +34,16 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item {% if request.path == '/' %}active{% endif %} px-lg-4">
-                        <a class="nav-link text-uppercase text-expanded" href="{% url 'Home' %}">Inicio</a>
+                        <a class="nav-link text-uppercase text-expanded" href="{% url 'Home' %}">Home</a>
                     </li>
-                    <li class="nav-item {% if request.path == '/servicios/' %}active{% endif %} px-lg-4">
-                        <a class="nav-link text-uppercase text-expanded" href="{% url 'Servicios' %}">Quienes Somos</a>
-                    </li>
+
                     <li class="nav-item {% if request.path == '/tienda/' %}active{% endif %} px-lg-4">
                         <a class="nav-link text-uppercase text-expanded" href="{% url 'Tienda' %}">Productos</a>
                     </li>
                     <li class="nav-item {% if request.path == '/contacto/' %}active{% endif %} px-lg-4">
                         <a class="nav-link text-uppercase text-expanded" href="{% url 'Contacto' %}">Contáctanos</a>
                     </li>
-                    <li class="nav-item {% if request.path|slice:':6' == '/blog/' %}active{% endif %} px-lg-4">
-                        <a class="nav-link text-uppercase text-expanded" href="{% url 'Blog' %}">Galeria</a>
-                    </li>
+
                     <li class="nav-item {% if request.path|slice:':6' == '/clima/' %}active{% endif %} px-lg-4">
                         <a class="nav-link text-uppercase text-expanded" href="{% url 'clima' %}">Clima</a>
                     </li>
@@ -68,8 +54,20 @@
                 </ul>
             </div>
         </div>
+        <div style="text-align: right; margin-right: 100px; color: white;">
+
+            {% if user.is_authenticated %} Hola {{ user.username }} &nbsp;&nbsp;<a href="{% url 'cerrar_sesion' %}" style="color: white;">Cerrar sesión</a> {% else %}
+
+            <a href="{% url 'logear'%}" style="color: white;">Login</a> &nbsp; &nbsp; <a href="{% url 'Autenticacion'%}" style="color: white;">Regístrate</a> {% endif %}
+
+
+        </div>
     </nav>
 
+    <h1 class="site-heading text-center text-white d-none d-lg-block">
+
+        <span class="site-heading-lower">MusicPro</span>
+    </h1>
 
     <!-- Contenido cambiante-->
     {% block content %} {% endblock %}
