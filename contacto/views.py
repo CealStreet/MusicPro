@@ -14,6 +14,11 @@ def contacto(request):
         formulario_contacto=FormularioContacto(data=request.POST)
         if formulario_contacto.is_valid():
             nombre=request.POST.get("nombre")
+            serie=request.POST.get("Serie Del Producto")
+            marca=request.POST.get("Marca")
+            codigo=request.POST.get("Codigo")
+            fecha=request.POST.get("Fecha")
+            valor=request.POST.get("Valor")
             email=request.POST.get("email")
             contenido=request.POST.get("contenido")
 

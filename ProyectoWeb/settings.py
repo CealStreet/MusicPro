@@ -50,7 +50,6 @@ INSTALLED_APPS = [
     'pedidos',
     'clima',
     'vistapedido',
-    'animales',
     'rest_framework'
     
     

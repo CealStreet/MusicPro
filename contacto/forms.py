@@ -7,6 +7,7 @@ class FormularioContacto(forms.Form):
     marca=forms.CharField(label="Marca", required=True)
     codigo=forms.CharField(label="Codigo", required=True)
     fecha=forms.CharField(label="Fecha", required=True)
-    valor=forms.CharField(label="valor", required=True)
+    valor=forms.CharField(label="Valor", required=True)
+    email=forms.CharField(label="Email", required=True)
 
     contenido=forms.CharField(label="Contenido", widget=forms.Textarea)

@@ -42,7 +42,7 @@ urlpatterns = [
 
     path('', include('ProyectoWebApp.urls')),
     path('vistapedido/',include('vistapedido.urls')),
-    path('animales/', include('animales.urls')),
+    
 
     
 
