@@ -22,7 +22,7 @@
 
                         {% for p in Listapedido %}
                         <tr>
-                            <th>{{ p.producto | title}}
+                            <th>{{ p.producto.nombre | title}}
                                 <th>{{ p.cantidad }}
                                     <th>{{p.user}}</th>
                                     <th>{{p.created_at}}</th>

@@ -39,7 +39,7 @@ def procesar_pedido(request):
     #mensaje para el futuro
     messages.success(request, "El pedido se ha creado correctamente")
     
-    return redirect('../tienda')
+    return redirect('../vistapedido')
     #return redirect('listado_productos')
     #return render(request, "tienda/tienda.html",{"productos":productos})
     
